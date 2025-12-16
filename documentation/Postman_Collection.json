@@ -1,0 +1,137 @@
+{
+  "info": {
+    "name": "Library Management System API",
+    "description": "Postman collection for testing Member and Book APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Member APIs",
+      "item": [
+        {
+          "name": "Get All Members",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/members",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "members"]
+            }
+          }
+        },
+        {
+          "name": "Add Member",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"memberId\": \"6789\",\n  \"name\": \"John Doe\",\n  \"email\": \"john@gmail.com\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/members",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "members"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Book APIs",
+      "item": [
+        {
+          "name": "Get All Books",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8080/api/books",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "books"]
+            }
+          }
+        },
+        {
+          "name": "Add Book",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isbn\": \"9780132350884\",\n  \"title\": \"Clean Code\",\n  \"author\": \"Robert C. Martin\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/books",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "books"]
+            }
+          }
+        },
+        {
+          "name": "Borrow Book",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 1,\n  \"memberId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/books/borrow",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "books", "borrow"]
+            }
+          }
+        },
+        {
+          "name": "Return Book",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"bookId\": 1,\n  \"memberId\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/books/return",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "books", "return"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

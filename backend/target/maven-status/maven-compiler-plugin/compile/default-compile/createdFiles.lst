@@ -1,0 +1,12 @@
+codeaura/config/WebConfig.class
+codeaura/repository/BookRepository.class
+codeaura/model/Borrowing.class
+codeaura/service/BorrowingService.class
+codeaura/model/Book.class
+codeaura/repository/MemberRepository.class
+codeaura/model/Member.class
+codeaura/controller/BorrowingController.class
+codeaura/controller/MemberController.class
+codeaura/controller/BookController.class
+codeaura/repository/BorrowingRepository.class
+codeaura/LibraryManagementSystemApplication.class

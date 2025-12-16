@@ -1,0 +1,13 @@
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/LibraryManagementSystemApplication.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/config/DataLoader.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/config/WebConfig.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/controller/BookController.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/controller/BorrowingController.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/controller/MemberController.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/model/Book.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/model/Borrowing.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/model/Member.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/repository/BookRepository.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/repository/BorrowingRepository.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/repository/MemberRepository.java
+/home/eng_karish/library-management-system/backend/src/main/java/codeaura/service/BorrowingService.java

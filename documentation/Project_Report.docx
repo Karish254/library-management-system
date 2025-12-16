@@ -1,0 +1,70 @@
+Group members:
+1.IN16/00092/22 kelvin Kariuki
+
+Library Management System - Project Report
+1. Executive SummaryL
+The Library Management System (LMS) is a robust, full-stack web application designed to streamline the operations of a modern library. It facilitates the efficient management of books, members, and borrowing transactions. The system replaces manual record-keeping with a digital, automated solution that ensures data integrity, real-time availability tracking, and a seamless user experience.
+
+2. Objectives
+Digitization: Convert physical records of books and members into a persistent digital database.
+Automation: Automate the borrowing and returning process, including date tracking and quantity adjustments.
+Usability: Provide a clean, modern, and responsive user interface for library staff.
+Reliability: Ensure data persistence across system restarts and prevent data corruption.
+3. Technology Stack
+The project is built using industry-standard technologies ensuring scalability and maintainability:
+
+Backend
+Framework: Spring Boot 3.4.12 (Java 17)
+Build Tool: Maven
+Database: H2 Database (File-based persistence with AUTO_SERVER mode)
+ORM: Hibernate / Spring Data JPA
+API: RESTful Web Services
+Frontend
+Framework: React 18
+Build Tool: Vite
+Styling: Pure CSS (Modern Variables, Flexbox/Grid, Glassmorphism)
+HTTP Client: Axios
+Icons: Lucide React
+4. Key Features
+📚 Book Management
+Inventory Tracking: Manage multiple copies of the same book (Total Copies vs Available Copies).
+Metadata: Track Title, Author, ISBN, and Published Date.
+Status Indicators: Real-time "Available", "Out of Stock", or "Unavailable" badges.
+CRUD Operations: Add, Edit, and Delete books seamlessy.
+👥 Member Management
+Registration: Register new members with Name, Email, and unique Library ID.
+History: View borrowing history and currently held books for each member.
+Management: Edit member details or remove members from the system.
+🔄 Borrowing System
+Check-out: Borrow books only if copies are available. Automatically decrements inventory.
+Check-in (Return): Return books by Member ID to ensure the correct loan is closed. Automatically increments inventory.
+Due Dates: Automatic calculation of due dates (default: 14 days) and display of borrow periods (e.g., 2023-10-01 → 2023-10-15).
+5. System Architecture
+The application follows a standard Client-Server Architecture:
+
+Client (Frontend): A Single Page Application (SPA) served by Vite. It consumes JSON APIs exposed by the backend to fetch data and render the UI.
+Server (Backend): A Spring Boot application that handles business logic, validation, and database interactions.
+Database: An embedded H2 database running in file mode (./librarydb) to store data permanently on the disk.
+6. Installation & Usage
+Prerequisites
+JDK 17+
+Node.js 18+
+Maven
+Steps
+Start Backend:
+
+cd backend
+mvn spring-boot:run
+Server runs on http://localhost:8080
+
+Start Frontend:
+
+cd frontend
+npm install
+npm run dev
+Client runs on http://localhost:5173
+
+7. Future Enhancements
+Authentication: Add Login/Role-based access (Admin vs Student).
+Search & Filter: Advanced search by ISBN or Category.
+Overdue Fines: Automatic calculation of fines for late returns.
