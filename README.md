@@ -27,3 +27,21 @@ Access the H2 Console to see your tables:
 URL: http://localhost:8080/h2-console
 JDBC URL: jdbc:h2:mem:testdb
 User: sa | Password: (blank)
+🖥️ Library Management System - Frontend
+A React-based dashboard for librarians to scan books and manage library members.
+
+🛠 Tech Stack
+Library: React.js
+Styling: CSS3 / Tailwind (optional)
+API Client: Axios / Fetch API
+Icons: Lucide-React or FontAwesome
+📂 Key Components
+BorrowForm: Input fields for Librarian to enter ISBN and Member ID.
+ReturnForm: Logic to handle book check-ins.
+MemberDashboard: View showing borrowed books and their due dates.
+ApiService: Centralized logic for calling the Spring Boot backend.
+🚀 Getting Started
+Ensure you have Node.js installed.
+Open the frontend folder in your terminal.
+Install dependencies:
+npm install
